@@ -40,6 +40,9 @@ section#login{
     overflow: hidden;
     position: absolute;
     transform: translate(-50%, -50%);
+
+    transition-timing-function: ease;
+    transition: width 0.3s, height 0.3s;
 }
 
 section#login > div#imagem{
@@ -54,4 +57,14 @@ section#login > div#imagem{
 section#login > div#formulario{
     padding: 12px;
     display: block;
+    width: 240px;
+}
+
+div#formulario h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+div#formulario p{
+    font-size: 0.8em;
 }
