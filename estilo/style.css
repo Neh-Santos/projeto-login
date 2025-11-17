@@ -30,7 +30,7 @@ main{
 /* Estilo do conteúdo */
 section#login{
     width: 250px;
-    height: 500px;
+    height: 524px;
     border-radius: 15px;
     background-color: #f4f7ea;
     box-shadow: 0px 0px 12px #00000052;
@@ -39,8 +39,8 @@ section#login{
     left: 50%;
     overflow: hidden;
     position: absolute;
+    
     transform: translate(-50%, -50%);
-
     transition-timing-function: ease;
     transition: width 0.3s, height 0.3s;
 }
@@ -67,4 +67,66 @@ div#formulario h1{
 
 div#formulario p{
     font-size: 0.8em;
+}
+
+form > div.campo{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border: 2px solid #5f2c82;
+    border-radius: 3px;
+    background-color: #5f2c82;
+}
+
+div.campo label{
+    font-weight: bolder;
+}
+
+form input[type="email"],
+input[type="password"]{
+    width: 70%;
+    height: 100%;
+    font-size: 1em;
+    border-radius: 3px;
+    border: 1px solid #317c7a;
+    background-color: #e9e9e3;
+}
+
+form > div.campo input:focus{
+    background-color: white;
+}
+
+form > input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    border: none;
+    display: block;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #40928f;
+}
+
+form > input[type="submit"]:hover{
+    background-color: #2f706e;
+}
+
+form> a.botao{
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    display: block;
+    margin-top: 5px;
+    padding-top: 5px;
+    color: #2f706e;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #49a09d;
+}
+
+form > a.botao:hover{
+    background-color: #49a09d;
 }
